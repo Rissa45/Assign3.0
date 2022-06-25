@@ -1,0 +1,78 @@
+*,body,html {
+  margin:0 ;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding: 0;
+  box-sizing: border-box 10px solid black;
+  background-color: skyblue
+  
+
+}
+.calculator {
+  position: fixed;
+  padding: 1em;
+  right: 5em;
+  top: 6em;
+  background-color: #eeeeee;
+  border-radius: 1em;
+  box-sizing: border-box;
+
+}
+.calculator .display {
+  margin: 50px;
+  border: 5px solid black;
+}
+.calculator .display #display {
+  padding: 1em;
+  text-align: end;
+  font-size: 30px;
+  height: 3em;
+  border-radius: 5px;
+  font-family: sans-serif;
+  background-color:blue;
+}
+.calculator .button_container {
+  display: inline;
+  grid-gap: 6em;
+}
+.calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+button {
+  outline: none;
+  padding: 1em 1em;
+  font-size: 30px;
+  border-radius: 1em;
+  border: 5px solid black;
+  grid-template-columns: auto;
+}
+.buttons #clear {
+  background-color: red;
+}
+button:hover,
+.buttons #clear:hover {
+  background-color: azure;
+  transition: 0.25s ease-in-out;
+}
+.buttons #delete {
+  background-color: orange;
+  color: white;
+}
+.buttons #equal {
+  background-color: black;
+  color: white;
+}
+.buttons #delete:hover,
+.buttons #equal:hover {
+  transform: scale(1.08);
+  transition: 0.25s ease-in-out;
+}
+.calculator #id {
+  text-align: center;
+  color: red;
+  font-family:  sans-serif;
+  font-size: 50px;
+  border-radius: 20px;
+}
